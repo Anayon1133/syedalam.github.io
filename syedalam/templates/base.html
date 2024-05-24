@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Md Shamsul Alam - Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="sidebar">
+        <div class="profile animate__animated animate__fadeInLeft">
+            <img src="{{ url_for('static', filename='image/image.png') }}" alt="Your Photo">
+            <h1>Syed Md Shamsul Alam</h1>
+            <p>PhD Student</p>
+            <p>Northern Arizona University</p>
+        </div>
+        <button id="toggleButton" class="toggle-btn">Night Mode</button>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('cv') }}" class="btn"><i class="fas fa-file-alt"></i> Download CV</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <footer>
+            © 2024 Syed Md Shamsul Alam. All Rights Reserved.
+        </footer>
+    </div>
+    <div class="main-content">
+        <section id="about" class="about animate__animated animate__fadeInUp">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am an incoming PhD student in Informatics and Computing at 
+                    <a href="https://nau.edu/school-of-informatics-computing-and-cyber-systems/" target="_blank">Northern Arizona University</a>, 
+                    where I will be working under the guidance of 
+                    <a href="https://jrmihalj.github.io" target="_blank">Dr. Joseph Mihaljevic</a>. 
+                    My research in computational epidemiology links mathematical models to spatiotemporal surveillance data to track disease patterns. 
+                    This includes developing algorithms, creating modeling software, and using machine learning to identify factors driving disease spread. 
+                    These methods apply to various pathogens, improving our understanding and response to infectious diseases.
+                </p>
+                <p>
+                    Previously, I spent two years of my PhD at Kennesaw State University, where I concentrated on Large Language Models in the 
+                    medical domain. I hold a Bachelor’s degree in Computer Science from Brac University, Bangladesh, where I also completed my 
+                    school and college education.
+                </p>
+                <div class="social-icons">
+                    <a href="mailto:ss5687@nau.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=53haLRwAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://www.linkedin.com/in/syed-md-shamsul-alam-3a9304156/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Anayon1133" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research animate__animated animate__fadeInUp">
+            <h2>Research</h2>
+            <div class="publications">
+                <h3>Publications</h3>
+                <ul>
+                    <li>
+                        <div class="publication-item">
+                            <div class="publication-info">
+                                <p><strong>A Novel Approach to Enhance Safety on Drowsy Driving in Self-Driving Car</strong><br>
+                                MM Islam, I Kowsar, MS Zaman, MFR Sakib, N Saquib, SMS Alam<br>
+                                Mobile networks and applications 28 (1), 272-284</p>
+                                <div class="publication-links">
+                                    <a href="static/cv/driver_drowsy.pdf" class="btn"><i class="fas fa-download"></i> Report</a>
+                                </div>
+                            </div>
+                            <img src="static/image/publication1.jpg" alt="Publication Image" class="publication-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="publication-item">
+                            <div class="publication-info">
+                                <p><strong>An Efficient Metaheuristic Approach for Finding Motifs from DNA Sequences</strong><br>
+                                SMS Alam, I Kowser, MAJ Islam, SS Zaman, TT Kabir, FB Ashraf<br>
+                                2021 5th International Conference on Electrical Information and Communication Technology (EICT)</p>
+                                <div class="publication-links">
+                                    <a href="static/cv/motif_finding.pdf" class="btn"><i class="fas fa-download"></i> Report</a>
+                                </div>
+                            </div>
+                            <img src="static/image/publication2.jpg" alt="Publication Image" class="publication-img">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="class-projects">
+                <h3>Class Projects</h3>
+                <p>Details about class projects.</p>
+            </div>
+        </section>
+
+        <section id="teaching" class="teaching animate__animated animate__fadeInUp">
+            <h2>Teaching</h2>
+            <div class="teaching-item">
+                <h3>Workshop</h3>
+                <p><strong>Learning Basics of Pytorch</strong><br>
+                Summer 2023<br>
+                Kennesaw State University<br>
+                Marietta, Georgia</p>
+            </div>
+            <div class="teaching-item">
+                <h3>Undergraduate Teaching Assistant</h3>
+                <p><strong>MAT110: Differential Calculus and Coordinate Geometry</strong><br>
+                Faculty Supervisor: Maruf Ahmed<br>
+                Spring 2020 - Summer 2020<br>
+                Brac University<br>
+                Dhaka, Bangladesh</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience animate__animated animate__fadeInUp">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Research Assistant</h3>
+                <p><strong>Northern Arizona University</strong><br>
+                July 2024 - Present<br>
+                Flagstaff, Arizona</p>
+            </div>
+            <div class="job">
+                <h3>Graduate Research Assistant</h3>
+                <p><strong>Kennesaw State University</strong><br>
+                August 2022 - May 2024<br>
+                Marietta, Georgia</p>
+            </div>
+            <div class="job">
+                <h3>System Analyst</h3>
+                <p><strong>Transcom Limited</strong><br>
+                December 2021 - July 2022<br>
+                Dhaka, Bangladesh</p>
+            </div>
+            <div class="job">
+                <h3>AI Engineer Intern</h3>
+                <p><strong>CPSD Technologies LTD</strong><br>
+                February 2021 – May 2021<br>
+                Dhaka, Bangladesh</p>
+            </div>
+            <div class="job">
+                <h3>Undergraduate Teaching Assistant</h3>
+                <p><strong>Brac University</strong><br>
+                January 2020 ‐ May 2020<br>
+                Dhaka, Bangladesh</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
