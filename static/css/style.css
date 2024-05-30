@@ -443,3 +443,100 @@ footer {
 .night-mode .toggle-btn:hover {
     background: #2980b9;
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .sidebar .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sidebar nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .sidebar nav ul li a {
+        padding: 0.5em;
+    }
+
+    .cv-download .btn {
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .main-content section {
+        padding: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .job, .teaching-item, .publications ul li {
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .job h3, .teaching-item h3, .publications h3 {
+        font-size: 1.2em;
+    }
+
+    .job p, .teaching-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .sidebar .profile h1 {
+        font-size: 1.2em;
+    }
+
+    .cv-download .btn {
+        font-size: 0.9em;
+        padding: 0.4em 0.8em;
+    }
+
+    .main-content h2 {
+        font-size: 1.2em;
+    }
+
+    .main-content section {
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .job, .teaching-item, .publications ul li {
+        padding: 0.4em;
+        margin-bottom: 0.8em;
+    }
+
+    .job h3, .teaching-item h3, .publications h3 {
+        font-size: 1em;
+    }
+
+    .job p, .teaching-item p {
+        font-size: 0.8em;
+    }
+}
