@@ -8,7 +8,7 @@ def index():
 
 @app.route('/cv')
 def cv():
-    return send_from_directory('static/cv', 'your_cv.pdf')
+    return send_from_directory('static/cv', 'resume.pdf')
 
 if __name__ == '__main__':
     app.run(debug=True)
