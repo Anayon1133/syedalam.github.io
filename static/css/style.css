@@ -476,4 +476,24 @@ footer {
     #particles-js-left, #particles-js-right {
         display: none;
     }
+
+    .sidebar .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cv-download {
+        margin-top: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        margin: 0.2em;
+    }
 }
